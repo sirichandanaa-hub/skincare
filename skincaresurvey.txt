@@ -1,0 +1,250 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Results - Skincare Preferences</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+    <style>
+        /* General Styles */
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, #009688, #4caf50);
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3.5em;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.3em;
+            margin-top: 10px;
+        }
+
+        header .header-wave {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            background: url('https://www.svgrepo.com/show/2046/wave.svg') no-repeat center;
+            background-size: cover;
+        }
+
+        /* Chart Section Styles */
+        .charts {
+            margin: 50px auto;
+            max-width: 1200px;
+            padding: 0 20px;
+        }
+
+        .chart-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            background: white;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-bottom: 30px;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .chart-container:hover {
+            transform: scale(1.02);
+        }
+
+        .description {
+            padding: 20px;
+            width: 50%;
+            box-sizing: border-box;
+            font-size: 1.2em;
+            color: #555;
+            line-height: 1.6;
+            border-left: 4px solid #009688;
+        }
+
+        .description p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+
+        .chart-image {
+            width: 50%;
+            overflow: hidden;
+        }
+
+        .chart-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer Styles */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1.2em;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .chart-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .description {
+                width: 100%;
+                text-align: center;
+                border-left: none;
+                padding: 20px;
+            }
+
+            .chart-image {
+                width: 100%;
+            }
+
+            header h1 {
+                font-size: 2.5em;
+            }
+
+            header p {
+                font-size: 1.1em;
+            }
+        }
+
+        /* Mobile-specific adjustments */
+        @media screen and (max-width: 480px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
+
+            .description {
+                font-size: 1em;
+                padding: 15px;
+            }
+
+            .chart-container {
+                margin: 20px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Survey Results: Skincare Preferences</h1>
+        <p>Insights gathered from skincare product usage, spending habits, and brand preferences.</p>
+        <div class="header-wave"></div>
+    </header>
+
+    <section class="charts">
+        <!-- Age Distribution -->
+        <div class="chart-container">
+            <div class="description">
+                <p><strong>Age Distribution:</strong> The majority of survey participants are adults aged 18 and above, reflecting the demographic that is most active in skincare product usage. Only a few participants are younger than 18, indicating that skincare habits are largely influenced by individuals in their late teens or older.</p>
+            </div>
+            <div class="chart-image">
+                <img src="https://i.ibb.co/ycD3DPSG/Screenshot-2025-02-14-182355.png" alt="Age Distribution">
+            </div>
+        </div>
+
+        <!-- Gender Distribution -->
+        <div class="chart-container">
+            <div class="description">
+                <p><strong>Gender Distribution:</strong> The gender breakdown shows a dominant female representation, with a significant portion of male respondents as well. A small percentage of participants preferred not to disclose their gender, highlighting a varied yet predominantly female-centric skincare market.</p>
+            </div>
+            <div class="chart-image">
+                <img src="https://i.ibb.co/XZWqKjJf/Screenshot-2025-02-14-182418.png" alt="Gender Distribution">
+            </div>
+        </div>
+
+        <!-- Skin Type Breakdown -->
+        <div class="chart-container">
+            <div class="description">
+                <p><strong>Skin Type Breakdown:</strong> Most participants have combination skin, followed by those with dry and oily skin types. This distribution suggests a wide variety of skincare needs, with combination skin being the most common concern. Dry and oily skin types are also well-represented, indicating targeted product preferences for different skin conditions.</p>
+            </div>
+            <div class="chart-image">
+                <img src="https://i.ibb.co/d4VGDNb5/Screenshot-2025-02-14-190142.png" alt="Skin Type Breakdown">
+            </div>
+        </div>
+
+        <!-- Preferred Products -->
+        <div class="chart-container">
+            <div class="description">
+                <p><strong>Preferred Products:</strong> Moisturizers are the most commonly used skincare product among the survey respondents, reflecting their importance in daily skincare routines. On the other hand, night creams are used by fewer participants, indicating that while many care for their skin during the day, fewer incorporate nighttime treatments into their regimen.</p>
+            </div>
+            <div class="chart-image">
+                <img src="https://i.ibb.co/n8QPTrSt/Screenshot-2025-02-14-183145.png" alt="Preferred Products">
+            </div>
+        </div>
+
+        <!-- Brand Preferences -->
+        <div class="chart-container">
+            <div class="description">
+                <p><strong>Brand Preferences:</strong> The survey reveals that Minimalist and Cetaphil are the most preferred skincare brands. These brands have established trust and popularity among users, likely due to their reputation for high-quality, effective products that cater to a range of skin types and concerns.</p>
+            </div>
+            <div class="chart-image">
+                <img src="https://i.ibb.co/N29ScjWp/Screenshot-2025-02-14-183033.png" alt="Brand Preferences">
+            </div>
+        </div>
+
+        <!-- Monthly Expenditure -->
+        <div class="chart-container">
+            <div class="description">
+                <p><strong>Monthly Expenditure:</strong> A large portion of participants spend between 500 and 1000 units on skincare products each month. This suggests that skincare is a relatively affordable priority for most individuals, though there is room for higher-end brands and products in the market to cater to those with larger budgets.</p>
+            </div>
+            <div class="chart-image">
+                <img src="https://i.ibb.co/V066b9FX/Screenshot-2025-02-14-190352.png" alt="Monthly Expenditure">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Survey Insights | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        ScrollReveal().reveal('.chart-container', { delay: 200, distance: '50px', origin: 'bottom' });
+    </script>
+</body>
+
+</html>
